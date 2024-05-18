@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Calculator</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="heading">
+        <h1 id="title">Digi Calc</h1>
+        <p id="description">It is a digital calculator task</p>
+    </div>
+    <div id="calculator">
+        <input id="result" readonly/>
+        <div id="keys">
+            <button onclick="appendToDisplay('+')" id="add" class="operator-btn">+</button>
+            <button onclick="appendToDisplay('7')" id="7">7</button>
+            <button onclick="appendToDisplay('8')" id="8">8</button>
+            <button onclick="appendToDisplay('9')" id="9">9</button>
+            <button onclick="appendToDisplay('-')" id="subtract" class="operator-btn">-</button>
+            <button onclick="appendToDisplay('4')" id="4">4</button>
+            <button onclick="appendToDisplay('5')" id="5">5</button>
+            <button onclick="appendToDisplay('6')" id="6">6</button>
+            <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+            <button onclick="appendToDisplay('1')" id="1">1</button>
+            <button onclick="appendToDisplay('2')" id="2">2</button>
+            <button onclick="appendToDisplay('3')" id="3">3</button>
+            <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+            <button onclick="appendToDisplay('0')" id="0">0</button>
+            <button onclick="appendToDisplay('.')" id=".">.</button>
+            <button onclick="calculate()" id="equal">=</button>
+            <button onclick="clearDisplay()" id="clear" class="operator-btn">C</button>
+        </div>
+        <script src="index.js"></script>
+        <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js" defer></script>
+    </div>
+</body>
+</html>
